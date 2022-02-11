@@ -4,6 +4,7 @@ fetch("https://zany-skitter-caper.glitch.me/experiences")
 	.then((data) => {
 		console.log(data);
 		renderData(data);
+		getSkills();
 	})
 	.catch((error) => {
 		console.error(error);
@@ -103,12 +104,14 @@ const createRows = (exp) => {
 	tableNode.append(trForThNode, trSecondNode);
 };
 
-fetch("https://zany-skitter-caper.glitch.me/skills")
-	.then((response) => response.json())
-	.then((skills) => {
-		console.log(skills);
-		skillsInit(skills);
-	});
+const getSkills = () => {
+	fetch("https://zany-skitter-caper.glitch.me/skills")
+		.then((response) => response.json())
+		.then((skills) => {
+			console.log(skills);
+			skillsInit(skills);
+		});
+};
 
 const skillsInit = (skills) => {
 	const divExpSkills = document.querySelector(".exp-skills");
