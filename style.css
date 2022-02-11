@@ -1,0 +1,145 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  border-radius: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+body {
+  background-color: #d3d1d1;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+  margin-right: -17px;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-photo {
+  padding: 0 20px;
+  max-height: 250px;
+  max-width: 250px;
+}
+
+.profile {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: #0ebcc9;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 25px 5px 0;
+  text-align: center;
+  width: 30%;
+}
+
+.fullname {
+  margin-bottom: 5px;
+}
+
+.profession {
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+p.copyright {
+  font-size: 12px;
+  margin-top: auto;
+}
+
+.exp-skills {
+  background-color: white;
+  border-radius: 25px;
+  margin-left: -25px;
+  padding: 30px 30px 50px;
+  width: 70%;
+}
+
+table {
+  width: 100%;
+}
+
+table th:first-child {
+  width: 20%;
+  text-align: right;
+}
+
+table th:last-child {
+  vertical-align: top;
+  text-align: left;
+  padding-left: 40px;
+}
+
+table td:first-child {
+  font-size: 14px;
+  color: grey;
+  text-align: right;
+  vertical-align: top;
+}
+
+table td:last-child {
+  padding-left: 40px;
+  border-bottom: 20px solid white;
+}
+
+div.skills span {
+  color: #0ebcc9;
+}
+
+div.skills p:first-child {
+  font-weight: bold;
+  margin-bottom: -2px;
+  margin-top: 0;
+}
+
+div.skills p:last-child {
+  color: grey;
+  margin-bottom: -2px;
+  font-size: 12px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 0;
+}
+
+div.skills div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.outer {
+  margin-top: 3px;
+  margin-bottom: 20px;
+  border: 1px solid #0ebcc9;
+  height: 10px;
+  border-radius: 15px;
+  padding: 1px;
+}
+
+.inner {
+  background-color: #0ebcc9;
+  height: 6px;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=style.css.map */
