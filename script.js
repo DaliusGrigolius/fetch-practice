@@ -1,8 +1,8 @@
-// companyName, description, finishYear, position, startYear
 fetch("https://zany-skitter-caper.glitch.me/experiences")
 	.then((response) => response.json())
 	.then((data) => {
 		console.log(data);
+		sortByDate(data);
 		renderData(data);
 		getSkills();
 	})
@@ -48,8 +48,8 @@ const createProfile = () => {
 		"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwritestylesonline.com%2Fwp-content%2Fuploads%2F2016%2F08%2FFollow-These-Steps-for-a-Flawless-Professional-Profile-Picture.jpg&f=1&nofb=1";
 	img.alt = "profile photo";
 
-	h1.textContent = "Alex Smith";
-	h5.textContent = "Web Designer";
+	h1.textContent = "Dalia Grigoliutė";
+	h5.textContent = "Student";
 	p.textContent = `\u00A9 2022. All rights reserved.`;
 
 	profilePhoto.append(img);
@@ -147,4 +147,8 @@ const skillsInit = (skills) => {
 		divOuter.append(divInner);
 		divSkills.append(divTitlePercent, divOuter);
 	});
+};
+
+const sortByDate = (data) => {
+	data.sort((a, b) => (a.finishYear > b.finishYear ? -1 : 1));
 };
